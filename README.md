@@ -3,6 +3,7 @@
 0. terminal> *python -m venv venv*
 1. terminal> *.\venv\Scripts\activate*
 2. terminal> *pip install -r requirements.txt*
+3. uprav profiles.yml 
 
 
 
