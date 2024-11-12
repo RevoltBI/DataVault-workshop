@@ -1,0 +1,4 @@
+# packages.yml
+packages:
+  - package: ScalefreeCOM/datavault4dbt
+    version: 1.7.2
