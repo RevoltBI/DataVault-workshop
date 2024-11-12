@@ -5,3 +5,9 @@ logs/
 .sqlfluff
 .user.yml
 .vscode
+/procs/sqlite3/__pycache__/
+*.pyc
+*.sty
+/tvdb-venv/
+install_packages.bat
+config.ini
