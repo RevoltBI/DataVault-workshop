@@ -6,7 +6,7 @@ DataVault_workshop:
             type: snowflake
             account: JXGPFAR-REVOLT_PARTNER
             user: USER_01
-            password: [password]
+            password: 'password'
             database: DATAVAULT_WORKSHOP
             warehouse: HACKATHON_WH
             schema: TEAM_01
