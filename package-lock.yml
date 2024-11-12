@@ -1,0 +1,6 @@
+packages:
+  - package: ScalefreeCOM/datavault4dbt
+    version: 1.7.2
+  - package: dbt-labs/dbt_utils
+    version: 1.3.0
+sha1_hash: bf82c2c32b8adbdca32b3213f24fa0e5cb6a5b2b

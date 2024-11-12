@@ -1,0 +1,12 @@
+send_anonymous_usage_stats: false
+DataVault_workshop:
+    target: Snowflake_DB
+    outputs:
+        Snowflake_DB:
+            type: snowflake
+            account: JXGPFAR-REVOLT_PARTNER
+            user: [username]
+            password: [password]
+            database: DATAVAULT_WORKSHOP
+            warehouse: HACKATHON_WH
+            schema: TEAM_01
