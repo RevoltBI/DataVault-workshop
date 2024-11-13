@@ -3,7 +3,7 @@ target/
 dbt_packages/
 logs/
 .sqlfluff
-.user.yml
+*.user.yml
 procs/
-.user.yml
 config.ini
+.vscode/
