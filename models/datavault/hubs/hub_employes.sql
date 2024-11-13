@@ -1,5 +1,6 @@
 {{ config(materialized='incremental') }}
 
+
 {%- set yaml_metadata -%}
 hashkey: 'hk_employees_h'
 business_keys: 
