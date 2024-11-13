@@ -2,30 +2,37 @@
 
 {%- set yaml_metadata -%}
 source_model: 'source_customers'
-ldts: '"edwLoadDate"'
-rsrc: '"edwRecordSource"'
+ldts: 'EDWLOADDATE'
+rsrc: 'EDWRECORDSOURCE'
 hashed_columns: 
     hk_customers_h:
-        - '"idzak"'
+        - 'IDZAK'
+    hk_customers_employees_l:
+        - 'IDZAK'
+        - 'IDZAM'
+    hk_employees_h:
+        - 'IDZAM'
     hd_customers_s:
         is_hashdiff: true
         use_rtrim: true
         columns:
-            - '"ICO"'
-            - '"Zkratka"'
-            - '"Nazev"'
-            - '"Ulice"'
-            - '"Mesto"'
-            - '"PSC"'
-            - '"Kredit"'
-            - '"Telefon"'
-            - '"Fax"'
+            - 'ICO'
+            - 'ZKRATKA'
+            - 'NAZEV'
+            - 'ULICE'
+            - 'MESTO'
+            - 'PSC'
+            - 'KREDIT'
+            - 'TELEFON'
+            - 'FAX'
+            - 'WWW'
+            - 'POZN'
 {%- endset -%} 
 
 {%- set metadata_dict = fromyaml(yaml_metadata) -%}
 
-{{ datavault4dbt.stage(source_model=metadata_dict.get(source_model),
-                    ldts=metadata_dict.get(ldts),
-                    rsrc=metadata_dict.get(rsrc),
-                    hashed_columns=metadata_dict.get(hashed_columns)
+{{ datavault4dbt.stage(source_model=metadata_dict.get('source_model'),
+                    ldts=metadata_dict.get('ldts'),
+                    rsrc=metadata_dict.get('rsrc'),
+                    hashed_columns=metadata_dict.get('hashed_columns')
                     ) }}
