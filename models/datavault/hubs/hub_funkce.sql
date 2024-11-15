@@ -4,7 +4,9 @@
 hashkey: 'hk_funkce_h'
 business_keys: 
     - 'IDFCE'
-source_models: stg_zamestnanec
+source_models: 
+    - name: stg_zamestnanec
+    - name: stg_funkce
 {%- endset -%}
 
 {%- set metadata_dict = fromyaml(yaml_metadata) -%}
